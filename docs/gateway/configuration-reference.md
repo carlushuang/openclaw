@@ -616,6 +616,7 @@ Matrix is extension-backed and configured under `channels.matrix`.
 - `channels.matrix.proxy` routes Matrix HTTP traffic through an explicit HTTP(S) proxy. Named accounts can override it with `channels.matrix.accounts.<id>.proxy`.
 - `channels.matrix.allowPrivateNetwork` allows private/internal homeservers. `proxy` and `allowPrivateNetwork` are independent controls.
 - `channels.matrix.defaultAccount` selects the preferred account in multi-account setups.
+- `channels.matrix.dm.sessionScope` controls how Matrix DMs group into sessions: `per-user` (default) shares by routed peer, while `per-room` isolates each DM room.
 - Matrix status probes and live directory lookups use the same proxy policy as runtime traffic.
 - Full Matrix configuration, targeting rules, and setup examples are documented in [Matrix](/channels/matrix).
 
